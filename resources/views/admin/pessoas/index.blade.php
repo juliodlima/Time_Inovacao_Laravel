@@ -35,6 +35,9 @@
                 </tbody>
             </table>
         </div>
+        <div class="row" align="center">
+            {{$registros->links()}}
+        </div>
         <div class="row">
             <a class="btn blue" href="{{ route('admin.pessoas.adicionar') }}">Adicionar</a>
         </div>

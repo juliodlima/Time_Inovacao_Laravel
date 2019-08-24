@@ -11,7 +11,9 @@ class CompetenciaController extends Controller
     // index competencia
     public function index()
     {
-        $registros = Competencia::all();
+        //$registros = Competencia::all();
+        // paginação
+        $registros = Competencia::paginate(7);
         return view('admin.competencias.index',compact('registros'));
     }
     // adicionar competencia

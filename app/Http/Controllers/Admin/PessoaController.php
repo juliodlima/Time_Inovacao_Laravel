@@ -11,7 +11,9 @@ class PessoaController extends Controller
     // index pessoa
     public function index()
     {
-        $registros = Pessoa::all();
+        //$registros = Pessoa::all();
+        // paginação
+        $registros = Pessoa::paginate(5);
         return view('admin.pessoas.index',compact('registros'));
     }
     // adicionar pessoa

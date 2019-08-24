@@ -18,30 +18,28 @@
                     <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="/">Home</a></li>
-                        {{-- @if (Auth::guest())
+                        @if (Auth::guest())
                             <li><a href="{{route('site.login')}}">Login</a></li>
-                        @else --}}
+                        @else
                             <li><a href="{{route('admin.pessoas')}}">Pessoas</a></li>
                             <li><a href="{{route('admin.competencias')}}">Competências</a></li>
-                            {{-- <li><a href="{{route('admin.matriculas')}}">Matriculas</a></li>
                             <li><a href="#">{{Auth::user()->name}}</a></li>
                             <li><a href="{{route('site.login.sair')}}">Sair</a></li>
-                        @endif --}}
+                        @endif
                     </ul>
                 </div>
             </nav>
         
             <ul class="sidenav" id="mobile">
                 <li><a href="/">Home</a></li>
-                {{-- @if (Auth::guest())
+                @if (Auth::guest())
                     <li><a href="{{route('site.login')}}">Login</a></li>
-                @else --}}
+                @else
                     <li><a href="{{route('admin.pessoas')}}">Pessoas</a></li>
                     <li><a href="{{route('admin.competencias')}}">Competências</a></li>
-                    {{-- <li><a href="{{route('admin.matriculas')}}">Matriculas</a></li>
                     <li><a href="#">{{Auth::user()->name}}</a></li>
                     <li><a href="{{route('site.login.sair')}}">Sair</a></li>
-                @endif --}}
+                @endif
             </ul>
         </header>
             

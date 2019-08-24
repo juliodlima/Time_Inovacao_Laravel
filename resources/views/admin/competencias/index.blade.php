@@ -27,6 +27,9 @@
                 </tbody>
             </table>
         </div>
+        <div class="row" align="center">
+            {{$registros->links()}}
+        </div>
         <div class="row">
             <a class="btn blue" href="{{ route('admin.competencias.adicionar') }}">Adicionar</a>
         </div>
